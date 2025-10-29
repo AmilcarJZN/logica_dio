@@ -9,13 +9,14 @@
 - A primeira etapa é saber qual problema você quer resolver.
 ## Fluxogramas
 - **Fluxograma:** é uma representação visual de uma sequência de ações.
--  Precisa ter um início e um fim, por padrão usa-se bordas arredondadas nesses casos.
--  Para entrada de dados usa-se um paralelogramo.
+-  Precisa ter um **início** e um **fim**, por padrão usa-se bordas arredondadas nesses casos.
+-  Para **entrada de dados** usa-se um paralelogramo.
+-  Para **estrutura de decisisão** usa-se um losângulo.
 
 ```mermaid
 graph TD;
     A(Início);
-    B[/Decisão/];
+    B[/Entrada de Dados/];
     C[Ação 1];
     D[Ação 2];
     E(Fim);
