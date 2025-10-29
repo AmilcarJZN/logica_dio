@@ -12,14 +12,18 @@
 -  Precisa ter um **início** e um **fim**, por padrão usa-se bordas arredondadas nesses casos.
 -  Para **entrada de dados** usa-se um paralelogramo.
 -  Para **estrutura de decisisão** usa-se um losângulo.
+-  Para **ações** usa-se um retângulo.
 
 ```mermaid
 graph TD;
     A(Início);
     B[/Entrada de Dados/];
-    C[Ação 1];
-    D[Ação 2];
-    E(Fim);
+    C{Estrutura de Decisão};
+    D[Ação 1];
+    E[Ação 2];
 A-->B;
+B-->C;
+C--Não -->D;
+C--Sim -->E;
 
 ```
