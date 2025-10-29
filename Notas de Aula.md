@@ -3,4 +3,5 @@
 [Artigos DIO] https://web.dio.me/articles  
 [Stack Overflow] https://stackoverflow.com  
 # Entendendo Algoritmos e Fluxogramas
-## Para que serve lógica
+## A base sobre algoritmos
+- **Algorítimos:** são os passo a passo lógicos que o computador precisa executar para resolver um problema.
