@@ -15,15 +15,19 @@
 -  Para **ações** usa-se um retângulo.
 
 ```mermaid
-graph TD;
+graph LR;
     A(Início);
     B[/Entrada de Dados/];
     C{Estrutura de Decisão};
     D[Ação 1];
     E[Ação 2];
+    F[Ação 3];
+    G(Fim);
 A-->B;
 B-->C;
 C--Não -->D;
 C--Sim -->E;
-
+E-->F;
+D--Looping -->C;
+F-->G;
 ```
