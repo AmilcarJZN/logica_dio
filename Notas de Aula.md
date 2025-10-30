@@ -22,7 +22,7 @@ graph LR;
     C{Estrutura de Decisão};
     D[Ação 1];
     E[Ação 2];
-    F[Ação 3];
+
     G(Fim);
     H[/Mensagem de Saída\];
 A-->B;
@@ -33,3 +33,16 @@ E-->H;
 D--Looping -->C;
 H-->G;
 ```
+# Estrutura de um Software e seus componentes
+**Todo o aplicativo tem esses 3 momentos:**
+```mermaid
+    graph LR;
+    a(Imput);
+    b(Processing);
+    c(Output);
+    a-->b;
+    b-->c;
+```
+## Features
+Cada **Feature** é uma funcionalidade do programa.  
+Cada **Feature** é um fluxo de Imput -> Processing -> Output
