@@ -10,9 +10,10 @@
 ## Fluxogramas
 - **Fluxograma:** é uma representação visual de uma sequência de ações.
 -  Precisa ter um **início** e um **fim**, por padrão usa-se bordas arredondadas nesses casos.
--  Para **entrada de dados** usa-se um paralelogramo.
+-  Para **entrada de dados** usa-se um paralelogramo inclinado.
 -  Para **estrutura de decisisão** usa-se um losângulo.
 -  Para **ações** usa-se um retângulo.
+-  Para **mensagens de saída** usa-se um paralelogramo base de pirâmide.
 
 ```mermaid
 graph LR;
@@ -23,11 +24,12 @@ graph LR;
     E[Ação 2];
     F[Ação 3];
     G(Fim);
+    H[/Mensagem de Saída\];
 A-->B;
 B-->C;
 C--Não -->D;
 C--Sim -->E;
-E-->F;
+E-->H;
 D--Looping -->C;
-F-->G;
+H-->G;
 ```
