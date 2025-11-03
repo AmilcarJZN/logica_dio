@@ -46,3 +46,10 @@ H-->G;
 ## Features
 Cada **Feature** é uma funcionalidade do programa.  
 Cada **Feature** é um fluxo de Imput -> Processing -> Output
+## Estrutura do Programa
+- **let** usado para declarar uma variável.
+- **const** usado para declarar uma constante
+- **//** usado para comentar
+- **+** usado para concatenar  
+*Uma constante não pode ter seu valor alterad0*
+## Tipos de Variáveis
