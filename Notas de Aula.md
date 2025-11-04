@@ -53,3 +53,8 @@ Cada **Feature** é um fluxo de Imput -> Processing -> Output
 - **+** usado para concatenar  
 *Uma constante não pode ter seu valor alterad0*
 ## Tipos de Variáveis
+- **string:** texto
+- **number:** números
+- **boolean:** variáveis lógicas que guardam 2 estados (verdadeiro ou falso)
+*JavaScript é uma linguágem não tipável (você não precisa declarar o tipo da variável na hora que cria ela)*  
+*Na informática, qualquer número que não seja usado para operações deve ser guardado como texto por boa prática*
