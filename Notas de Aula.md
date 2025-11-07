@@ -58,3 +58,35 @@ Cada **Feature** é um fluxo de Imput -> Processing -> Output
 - **boolean:** variáveis lógicas que guardam 2 estados (verdadeiro ou falso)
 *JavaScript é uma linguágem não tipável (você não precisa declarar o tipo da variável na hora que cria ela)*  
 *Na informática, qualquer número que não seja usado para operações deve ser guardado como texto por boa prática*
+# Criando e manipulando vetores e matrizes
+## Arrays (Vetores)
+```let array = ["nome 1","Nome 2" , "Nome 3"]```
+### Posições
+As posições começam do 0 e não do 1, são colocadas em **[ ]**.  
+```console.log(array[0])```  
+**Existem vantagens em usar vetores**  
+- Vetores possuem funções e recursos de acordo com a linguagem usada.
+- Essas funções dos vetores são chamadas de **métodos**
+## Matrizes 
+Matrizes são vetores de duas ou mais dimensões.  
+São montadas colocando um vetor dentro do outro.  
+Seus valores podem ser listados por completo (o array inteiro), ou campos individuais.  
+*Assim como arrays, matrizes também possuem funções*
+
+```
+let matriz = [
+["Nome4","M",3],
+["Nome5","F",2],
+["Nome6","f",4],
+]
+```
+```
+console.log("o nome " + matriz[2][0] + " é do sexo "+matriz[2][1]+" e tem número "+matriz[2][2])
+```
+## Quando usar qual?
+- **Variáveis e constantes:** Quando precisa usar apenas uma informação.
+- **Arrays:** Quando forem várias informações do mesmo tipo.
+- **Matrizes:** Quando forem várias informações de tipos diferentes.    
+### Matrizes e Vetores possuem:
+- **Métodos:** são funções.
+- **Propriedades:** são informações  
