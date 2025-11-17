@@ -93,6 +93,7 @@ console.log("o nome " + matriz[2][0] + " é do sexo "+matriz[2][1]+" e tem núme
 # Entendendo Operadores
 ## Operadores e Expressões
 ### Operadores Artméticos
+**- Escopo:** É aquilo que está entre parênteses.
 | **Operador** | **Descrição** | **Exemplo** |
 | --- | --- | --- |
 | + | Adição | **`let result = 5 + 3;`** |
