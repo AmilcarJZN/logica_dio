@@ -137,22 +137,28 @@ console.log("o nome " + matriz[2][0] + " é do sexo "+matriz[2][1]+" e tem núme
 |--|	Decremento	|**`let counter = 5; counter--;`**
 
 # Estruturas de Controle
-## IF
+## Estruturas Condicionais
+### IF
 Verifica se a condição entre parênteses é `true`, se for executa oi código entre `{ }`.
 ```
 if (condição == true) { Faça isso }
 ```
-## ELSE
+### ELSE
 Caso a condição do if seja `false`, executará o código entre `{ }` do else.
 ```
 if (condição == true) { Faça isso }
     else {faça esse outro}
 
 ```
-## ELSE IF
+### ELSE IF
 Usado para adicionar novas perguntas dentro de um IF, também é chamado de IF sequencial.
 ```
 if (condição == true) { Faça isso }
     else if (condição == true) { Faça esse outro} 
     else {faça isso então}
 ```
+## Estruturas de Decisão
+### Switch Case
+#### Break
+#### Default: testar no inicio do switch
+### mais de uma palavra para um bloco de código
