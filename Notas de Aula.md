@@ -105,7 +105,8 @@ console.log("o nome " + matriz[2][0] + " é do sexo "+matriz[2][1]+" e tem núme
 ### Operadores Relacionais
 | **Operador** | **Descrição** | **Exemplo** |
 | --- | --- | --- |
-| == | Igual a | **`let isEqual = (x == y);`** |
+| == | Igual a (compara valor) | **`let isEqual = (x == y);`** |
+| === | Igual a (compara valor e formato)| **Exemplo: 1 e "1"**|  
 | != | Diferente de | **`let isNotEqual = (x != y);`** |
 | > | Maior que | **`let isGreater = (x > y);`** |
 | < | Menor que | **`let isLess = (x < y);`** |
@@ -134,3 +135,24 @@ console.log("o nome " + matriz[2][0] + " é do sexo "+matriz[2][1]+" e tem núme
 |---|---|---|
 |++|	Incremento	|**`let counter = 0; counter++;`**
 |--|	Decremento	|**`let counter = 5; counter--;`**
+
+# Estruturas de Controle
+## IF
+Verifica se a condição entre parênteses é `true`, se for executa oi código entre `{ }`.
+```
+if (condição == true) { Faça isso }
+```
+## ELSE
+Caso a condição do if seja `false`, executará o código entre `{ }` do else.
+```
+if (condição == true) { Faça isso }
+    else {faça esse outro}
+
+```
+## ELSE IF
+Usado para adicionar novas perguntas dentro de um IF, também é chamado de IF sequencial.
+```
+if (condição == true) { Faça isso }
+    else if (condição == true) { Faça esse outro} 
+    else {faça isso então}
+```
