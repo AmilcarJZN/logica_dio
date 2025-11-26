@@ -159,6 +159,58 @@ if (condição == true) { Faça isso }
 ```
 ## Estruturas de Decisão
 ### Switch Case
+Verifica se uma informação é verdadeira, se for executa tudo o que estiver abaixo, no bloco, ou até o comando break.
+let dia = "terça"; // Você pode mudar isso para outros dias
+```
+switch (dia) {
+  case "segunda":
+    console.log("Dia de começar a semana com energia!");
+    break;
+  case "terça":
+    console.log("Hora de aprender coisas novas!");
+    break;
+  case "quarta":
+    console.log("Metade da semana, continue firme!");
+    break;
+  case "quinta":
+    console.log("Quase lá, um pouco mais de esforço!");
+    break;
+  case "sexta":
+    console.log("Dia de comemorar, o fim de semana está chegando!");
+    break;
+  default:
+    console.log("Final de semana! Descanse e divirta-se!");
+}
+```
 #### Break
-#### Default: testar no inicio do switch
+Usado para fazer com que o switch seja termidado sem prosseguir para os comandos seguintes.
+#### Default: 
+Caso nenhum **`case`** tenha sido executado este bloco será executado.  
+Não precisa estar no final do `switch`.
 ### mais de uma palavra para um bloco de código
+É possível adicionar mais de um case para um bloco de código:  
+```
+switch (dia) {
+  case "morango":
+  case "mamao"
+    console.log("será ativado com qualquer das palavras, morango ou mamão!");
+    break;
+}
+```
+## Estruturas de Repetição
+### For
+É usado para executar um bloco de código várias vezes, de acordo com uma condição pré estabelecida.  
+O **i++** é executado após o bloco de código.  
+No caso abaixo ele irá mostrar o valor na posição 0 do vetor e depois transformará o **i em 1**.
+```
+const numeros =[1,2,3,4,5]
+
+for (let i=0 ; i < numeros.length; i++){
+  console.log(numeros[i])
+}
+```
+### While
+O laço while é usado quando não sabemos quantas vezes precisamos executar um bloco de código. Enquanto a condição for verdadeira ele é executado, **é importante não esquecer de colocar um contador ou condição de saída no bloco de código**.  
+```
+
+```
