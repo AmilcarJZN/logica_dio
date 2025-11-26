@@ -212,5 +212,22 @@ for (let i=0 ; i < numeros.length; i++){
 ### While
 O laço while é usado quando não sabemos quantas vezes precisamos executar um bloco de código. Enquanto a condição for verdadeira ele é executado, **é importante não esquecer de colocar um contador ou condição de saída no bloco de código**.  
 ```
+let jogadas = 0;
+let cara = false;
 
+while(!cara) {
+  jogadas++;
+  cara = Math.random() < 0.5;
+}
+
+console.log(`A moeda caiu cara após ${jogadas} jogadas!`);
+```
+### Do While
+O laço do-while é um laço de repetição `while` que sempre executa o bloco de código ao menos uma vez.
+```
+let contador = 1
+do {
+  console.log("Olá")
+  contador ++
+} while (contador <3)
 ```
