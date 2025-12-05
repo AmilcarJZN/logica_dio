@@ -231,3 +231,41 @@ do {
   contador ++
 } while (contador <3)
 ```
+# Funções
+- Uma função representa uma ação.  
+- Uma função sempre abre e fecha parênteses.  
+- Ela pode ou não receber um parâmetro de entrada e pode - ou não ter uma saída, mas sem pre terá uma ação.  
+- O que está entre chaves em uma função é chamado de - escopo.  
+- Uma função precisa ser chamada para executar.  
+**Atenção**
+- Assim como variáveis: nomes de funçõs não começam com números.
+- Usar camelCase.
+- Funções são ações, então é bom nomeá-las com verbos.
+- Por boa prática: **Cada função deve fazer uma única coisa**.  
+- **Função Main( ):** é uma função responsável por chamar as demais funções.
+- A identação é bem importante para melhor visualizar o código em funções.
+- Uma declaração de função cria uma função, enquanto uma chamada de função executa o código dentro dela.  
+
+## Parâmetros
+Uma função pode receber um ou mais parâmetros, eles são passados ao invocar a função e assumem o parâmetro no cabeçalho da função.  
+Geralmente se passa parâmtros quando se quer que a função tenha resultados diferentes.  
+### Valor padrão
+É possível passar um valor padrão em uma função, usado caso a função não recebe um dos parâmetros, no exemplo abaixo é o "cliente".  
+O valor padrão só é usado caso a função não receba um valor no parâmetro esperado.  
+Não é possível deixar 2 vírgulas grudadas na passagem de parâmentros, então é importante deixar as opcionais (que podem usar um valor padrão no fim).
+```
+torrar("Pão Integral","Anita")
+function torrar (pao,nome = "cliente"){
+  console.log("Torrada feita com " + pao)
+  console.log(" Pedido feito por "+nome)
+}
+
+```
+## Escopo
+O Escopo de uma função é determinado pelo conjunto de chaves dela.  
+Variáveis fora dela não são reconhecidas, pois estão fora das chaves.  
+### var
+Existe a opção de declarar uma variável global, ao invés de usar o let  ou const usa-se **`var`**.  
+**Essa não é uma prática recomendada, pois equivale a uma variável estar disponível publicamente (ou vazendo) pelo sistema**
+## Funções com retorno
+Uma função pode retornar **apenas** **um** valor ou **um** objeto.
