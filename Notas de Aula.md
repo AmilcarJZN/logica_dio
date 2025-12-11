@@ -269,3 +269,32 @@ Existe a opção de declarar uma variável global, ao invés de usar o let  ou c
 **Essa não é uma prática recomendada, pois equivale a uma variável estar disponível publicamente (ou vazendo) pelo sistema**
 ## Funções com retorno
 Uma função pode retornar **apenas** **um** valor ou **um** objeto.
+# Estrutura de dados e objetos
+## Json
+JSON é usado para facilitar o transpote e armazenamento de informações, consiste em um par de cabeçalho e valor separado por dois pontos, os valores são separados por vírgulas.  
+JSON possui alguns comandos para facilitar o trabalho, como por exemplo o comando `in` que irá percorrer um vetor.  
+```
+let invoice = {
+    name: "felipe",
+    age: 28,
+    products: {
+        0:["Mouse bacana" ,29.90],
+        1:["Teclado mecânico", 139.90],
+        2:["Monitor",499.00]
+    },
+    taxes:"98.46"
+}
+
+generateInvoice (invoice)
+
+function generateInvoice(invoice){
+    console.log(`O comprador é ${invoice.name}`)
+    console.log(`A idade é ${invoice.age}`)
+    console.log("------------")
+    
+    for(let index in invoice.products){
+    	let [productName, productPrice] = invoice.products[index]
+        console.log(`- ${productName}: R$ ${productPrice}`)
+    }
+}
+```
