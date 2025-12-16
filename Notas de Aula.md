@@ -302,7 +302,8 @@ function generateInvoice(invoice){
 Normalmente usa-se Json para trafegar dados entre uma aplicação e outra, já as classes e objetos trafegam informações dentro da aplicação.  
 **Instanciar:** É criar um objeto a partir de uma classe.
 ### Classe
-É a padronização de uma estrutura de dados.
+É a padronização de uma estrutura de dados.  
+Dentro da classe se referencia variáveis com `this.`.
 #### Construtor
 Toda classe, por boa prática deveria ter um método chamado `constructor(){}`.  
 O constructor é uma função. Então uma classe, além de guardar informações, pode guardar "comportamentos"
