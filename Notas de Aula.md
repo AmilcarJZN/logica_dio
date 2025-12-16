@@ -298,3 +298,44 @@ function generateInvoice(invoice){
     }
 }
 ```
+## Introdução à classes e objetos
+Normalmente usa-se Json para trafegar dados entre uma aplicação e outra, já as classes e objetos trafegam informações dentro da aplicação.  
+**Instanciar:** É criar um objeto a partir de uma classe.
+### Classe
+É a padronização de uma estrutura de dados.
+#### Construtor
+Toda classe, por boa prática deveria ter um método chamado `constructor(){}`.  
+O constructor é uma função. Então uma classe, além de guardar informações, pode guardar "comportamentos"
+### Objetos
+Mantém a padronização da classe e implementa seus valores de propriedades.  
+Podem ter métodos inteligentes (funções próprias).  
+
+### Método
+Métodos são funções que trabalham em contexto com uma classe.  
+Dentro de uma classe não há necessidade de declarar uma variável (`let`) ou uma função (`function`)
+
+### Exemplo
+```
+class formaDeBolo {
+    constructor(saborDaMassa, saborDoRecheio) {
+        this.saborDaMassa = saborDaMassa
+        this.saborDoRecheio = saborDoRecheio
+    }
+    escrever() {
+        console.log(`Um delicioso bolo de ${this.saborDaMassa} com recheio 
+        de ${this.saborDoRecheio}`)
+    }
+    assar(){
+        console.log(`Bolo de ${this.saborDaMassa} assando.`)
+    }
+
+}
+let boloFesta = new formaDeBolo("chocolate","cenoura")
+let boloPremium = new formaDeBolo("baunilha","coco")
+boloPremium.escrever()
+boloPremium.assar()
+
+boloFesta.escrever()
+console.log(boloFesta)
+console.log(boloFesta.saborDoRecheio)
+```
